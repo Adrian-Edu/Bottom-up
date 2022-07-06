@@ -1,25 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Product from './import';
 
-function App() {
+function Candidat() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <h1>Salut dragilor.</h1>
+
+    name = "Edu"
+    prenume = "Adrian"
+    varsta = "33"
+    oras = "Bucuresti"
+
+
+    <Product 
+    name = "Edu"
+    prenume = "Adrian"
+    varsta = "33"
+    oras = "Bucuresti"
+    />
+  
     </div>
-  );
+  )
 }
 
-export default App;
+export default Candidat;
