@@ -1,15 +1,6 @@
+import Vedem from "./secondimport"
 
 function Product (props) {
-
-
-    return (
-        <div>
-            <p> {props.name} </p>
-            <p> {props.prenume} </p>
-            <p> {props.varsta} </p>
-            <p> {props.oras} </p>
-            </div>
-    )
 
 }
 
