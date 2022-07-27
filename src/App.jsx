@@ -1,36 +1,32 @@
 import { useState } from 'react';
 import './App.css';
-import Product from './import';
-
-const candidat = [
-  { 
-    nume: "Edu",
-    prenume: "Adrian Florentin",
-    varsta: 33,
-    oras: "Bucuresti"
-  },
-  {
-    nume: "Sarbu",
-    prenume: "Elena Cristina",
-    varsta: 34,
-    oras: "Bucuresti"
-  }
-]
+import Child from './import';
 
 
 
 function Candidat() {
 
-  const [data, setData] = useState(candidat)
+  const [data,setData] = useState("")
+  const [click, setClick] = useState("")
+
+  const primeste = (pret) => {
+    setData(pret)
+  }
+
+  const handleClick = () => {
+    setClick(data)
+  } 
+
+
 
   return (
     <div className='App-header'>
 
-    {data.filter((item, index) => [0, 1].includes(item)).map((item, key) => {
-      return ( <Product transfer={item} key={key}/>)
-    })}
-  
+    < Child date={primeste} />
+    
+    <button onClick={handleClick}>Click</button>
 
+    <p>{click}</p>
 
     </div>
   )

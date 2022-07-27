@@ -1,11 +1,20 @@
-import Vedem from "./secondimport"
+import { useState } from "react"
 
-function Product (props) {
+
+function Child (props) {
+
+    var pret = 10000
+
+    props.date(pret)
+
     return (
-        <div>
-            <p>{props.transfer.nume}</p>
-        </div>
+
+    <div>
+        
+    </div>    
+
+
     )
 }
 
-export default Product
+export default Child
