@@ -6,27 +6,25 @@ import Child from './import';
 
 function Candidat() {
 
-  const [data,setData] = useState("")
-  const [click, setClick] = useState("")
+  const [data, setData] = useState("")
 
+  const [handleClick, sethandleClick] = useState("")
+ 
   const primeste = (pret) => {
     setData(pret)
   }
 
-  const handleClick = () => {
-    setClick(data)
-  } 
-
+ const primesteClick = (click) => {
+  sethandleClick(click)
+ } 
 
 
   return (
     <div className='App-header'>
 
-    < Child date={primeste} />
+    < Child date={primeste} trimite={data} trimite2={primesteClick} />
     
-    <button onClick={handleClick}>Click</button>
-
-    <p>{click}</p>
+    <p>{handleClick}</p>
 
     </div>
   )
